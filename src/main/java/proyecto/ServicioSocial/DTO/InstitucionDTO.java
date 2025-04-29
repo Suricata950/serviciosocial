@@ -1,6 +1,6 @@
 package proyecto.ServicioSocial.DTO;
 
-import proyecto.ServicioSocial.Institucion;
+import proyecto.ServicioSocial.entities.Institucion;
 
 public class InstitucionDTO {
     private int id_institucion;

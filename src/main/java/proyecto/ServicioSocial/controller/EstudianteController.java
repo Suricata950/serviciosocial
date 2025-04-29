@@ -7,6 +7,7 @@ import org.springframework.web.server.ResponseStatusException;
 import proyecto.ServicioSocial.DTO.EstudianteConProyectosYInstitucionesDTO;
 import proyecto.ServicioSocial.DTO.EstudianteDTO;
 import proyecto.ServicioSocial.DTO.ProyectoAsignadoDTO;
+import proyecto.ServicioSocial.entities.Estudiante;
 import proyecto.ServicioSocial.repositories.EstudianteRepository;
 
 

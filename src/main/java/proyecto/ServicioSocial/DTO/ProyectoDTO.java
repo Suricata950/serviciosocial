@@ -1,5 +1,7 @@
 package proyecto.ServicioSocial.DTO;
 
+import proyecto.ServicioSocial.entities.Proyecto;
+
 import java.time.LocalDate;
 
 public class ProyectoDTO {
