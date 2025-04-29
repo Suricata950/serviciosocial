@@ -2,8 +2,8 @@ package proyecto.ServicioSocial.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
-import prototipo.SS.entities.Estudiante;
-import prototipo.SS.entities.Proyecto;
+import proyecto.ServicioSocial.entities.Estudiante;
+import proyecto.ServicioSocial.entities.Proyecto;
 
 import java.time.LocalDate;
 

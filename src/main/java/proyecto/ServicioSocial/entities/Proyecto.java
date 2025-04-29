@@ -1,8 +1,8 @@
 package proyecto.ServicioSocial.entities;
 
 import jakarta.persistence.*;
-import prototipo.SS.model.EstudianteProyecto;
-import prototipo.SS.model.ProyectoInstitucion;
+import proyecto.ServicioSocial.model.EstudianteProyecto;
+import proyecto.ServicioSocial.model.ProyectoInstitucion;
 
 import java.time.LocalDate;
 import java.util.List;
