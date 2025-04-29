@@ -1,26 +1,27 @@
-package proyecto.ServicioSocial.models;
+package proyecto.ServicioSocial.DTO;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import java.time.LocalDate;
 
-@Entity
-public class Estudiantes {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long idEstudiante;
-
+public class EstudianteDTO {
+    private int idEstudiante;
     private String nombre;
     private String telefono;
     private String email;
-    private String fechaIngreso;
+    private LocalDate fechaIngreso;
 
-    public Long getIdEstudiante() {
+    public EstudianteDTO(Estudiante estudiante) {
+        this.idEstudiante = estudiante.getIdEstudiante();
+        this.nombre = estudiante.getNombre();
+        this.telefono = estudiante.getTelefono();
+        this.email = estudiante.getEmail();
+        this.fechaIngreso = estudiante.getFechaIngreso();
+    }
+
+    public int getIdEstudiante() {
         return idEstudiante;
     }
 
-    public void setIdEstudiante(Long idEstudiante) {
+    public void setIdEstudiante(int idEstudiante) {
         this.idEstudiante = idEstudiante;
     }
 
@@ -48,11 +49,11 @@ public class Estudiantes {
         this.email = email;
     }
 
-    public String getFechaIngreso() {
+    public LocalDate getFechaIngreso() {
         return fechaIngreso;
     }
 
-    public void setFechaIngreso(String fechaIngreso) {
+    public void setFechaIngreso(LocalDate fechaIngreso) {
         this.fechaIngreso = fechaIngreso;
     }
 }

@@ -1,0 +1,39 @@
+package proyecto.ServicioSocial.DTO;
+
+import proyecto.ServicioSocial.Institucion;
+
+public class InstitucionDTO {
+    private int id_institucion;
+    private String nombre_institucion;
+    private String ubicacion;
+
+    public InstitucionDTO(Institucion institucion) {
+        this.id_institucion = institucion.getId_institucion();
+        this.nombre_institucion = institucion.getNombre_institucion();
+        this.ubicacion = institucion.getUbicacion();
+    }
+
+    public int getId_institucion() {
+        return id_institucion;
+    }
+
+    public void setId_institucion(int id_institucion) {
+        this.id_institucion = id_institucion;
+    }
+
+    public String getNombre_institucion() {
+        return nombre_institucion;
+    }
+
+    public void setNombre_institucion(String nombre_institucion) {
+        this.nombre_institucion = nombre_institucion;
+    }
+
+    public String getUbicacion() {
+        return ubicacion;
+    }
+
+    public void setUbicacion(String ubicacion) {
+        this.ubicacion = ubicacion;
+    }
+}

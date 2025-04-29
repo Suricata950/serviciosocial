@@ -69,6 +69,24 @@
 			<version>1.5.3.Final</version>
 		</dependency>
 
+
+		<!-- Spring Boot Starter para Seguridad -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
+		</dependency>
+
+		<!-- Spring Security para Testing -->
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+
+
+
+
+
 	</dependencies>
 
 	<build>
